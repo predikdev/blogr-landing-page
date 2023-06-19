@@ -1,0 +1,56 @@
+---
+import Button from './Button.astro';
+---
+
+<section class="hero">
+  <div class="container content">
+    <h1 class="text-36">A modern publishing platform</h1>
+    <p class="text-18">Grow your audience and build your online brand</p>
+
+    <div class="cta">
+      <Button text="Start for free" isFilled />
+      <Button text="Learn more" isTransparent />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .hero {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 660px;
+    background: url('/public/bg-pattern-intro-mobile.svg'),
+      linear-gradient(130deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 35% 30%;
+    border-bottom-left-radius: 6rem;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 1rem;
+
+      .text-36 {
+        color: #fff;
+        text-align: center;
+      }
+
+      .text-18 {
+        color: #fff;
+        width: 25ch;
+        text-align: center;
+      }
+
+      .cta {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
+</style>
+
